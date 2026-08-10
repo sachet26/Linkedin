@@ -15,12 +15,12 @@ const app = express()
 let server = http.createServer(app)
 export const io = new Server(server, {
     cors:({
-    origin:"http://localhost:5173",
+    origin:"https://linkedin-frontend-lpmj.onrender.com",
     credentials:true
 })
 })
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://linkedin-frontend-lpmj.onrender.com",
     credentials:true
 }))
 app.use(express.json())
